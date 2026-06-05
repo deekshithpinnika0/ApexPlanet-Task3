@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3: Advanced Styling & JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>ApexPlanet Task 3 Dashboard</h1>
+    </header>
+
+    <main class="dashboard-container">
+        
+        <section class="card quiz-card">
+            <h2>Interactive Coding Quiz</h2>
+            <div id="quiz-box">
+                <p id="question-text">Loading question...</p>
+                <div id="options-container" class="options-grid"></div>
+                <button id="next-btn" style="display: none;">Next Question</button>
+            </div>
+            <div id="quiz-result" class="result-text"></div>
+        </section>
+
+        <section class="card api-card">
+            <h2>Live Tech Quotes (API Fetch)</h2>
+            <div id="api-box">
+                <blockquote id="quote-text">"Click below to fetch a live tech thought from the internet..."</blockquote>
+                <p id="quote-author"></p>
+                <button id="fetch-btn">Fetch New Data</button>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
